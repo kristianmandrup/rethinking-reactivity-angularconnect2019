@@ -1,8 +1,9 @@
 import { Component } from "@angular/core";
 import { Subject } from "rxjs";
 import { scan, startWith } from "rxjs/operators";
-import { ReactiveComponent } from "ng-reactive-component";
+import { ReactiveStateComponent, ReactiveState } from "ng-reactive-component";
 
+@ReactiveStateComponent()
 @Component({
   selector: "app-root",
   template: `
@@ -20,7 +21,7 @@ import { ReactiveComponent } from "ng-reactive-component";
     </button>
   `
 })
-export class AppComponent extends ReactiveComponent {
+export class AppComponent implements ReactiveState {
   values$ = new Subject<number>();
   state = this.connect({
     count: this.values$.pipe(

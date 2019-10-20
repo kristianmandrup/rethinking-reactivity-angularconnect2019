@@ -4,4 +4,16 @@
 
 Link to the talk: https://youtu.be/rz-rcaGXhGk
 
-Follow me on Twitter [@MikeRyanDev](https://twitter.com/mikeryandev)
+See [@MikeRyanDev](https://twitter.com/mikeryandev)
+
+## Changes to original repo
+
+Using experimental library [ng-reactive-component](https://github.com/kristianmandrup/ng-reactive-component)
+
+```json
+{
+  "dependencies": {
+    "ng-reactive-component": "kristianmandrup/ng-reactive-component",
+  }
+}
+```
