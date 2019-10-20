@@ -21,7 +21,7 @@ import { ReactiveStateComponent, ReactiveState } from "ng-reactive-component";
     </button>
   `
 })
-export class AppComponent implements ReactiveState {
+export class DecoratedComponent implements ReactiveState {
   values$ = new Subject<number>();
   state = this.connect({
     count: this.values$.pipe(
